@@ -3,11 +3,12 @@ from selenium.webdriver.common.by import By
 from pprint import pprint
 from selenium.webdriver.common.keys import Keys
 import time
+import os
 
 # Declare Constants
-SIMILAR_ACCOUNT = "python.hub"
-USERNAME = "ebifred_emma"
-PASSWORD = "ilBUBU5"
+SIMILAR_ACCOUNT = os.environ.get("Acct")
+USERNAME = os.environ.get("PHn_no")
+PASSWORD = os.environ.get("passwrd") 
 
 
 class InstaFollower:
